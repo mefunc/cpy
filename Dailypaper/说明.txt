@@ -1,0 +1,13 @@
+1、对于非Windows机器，需要安装MariaDB Connector/C：https://mariadb.com/docs/clients/mariadb-connectors/connector-c/install
+以下仅适用CentOS/RHEL：
+（1）安装wget：sudo yum install -y wget
+（2）下载mariadb_repo_setup实用程序，验证其校验和，并确保其权限允许执行：
+sudo wget https://downloads.mariadb.com/MariaDB/mariadb_repo_setup
+echo "b9e90cde27affc2a44f9fc60e302ccfcacf71f4ae02071f30d570e6048c28597  mariadb_repo_setup" | sha256sum -c -
+chmod +x mariadb_repo_setup
+（3）使用mariadb_repo_setup实用程序配置CS包存储库：sudo ./mariadb_repo_setup
+（4）安装MariaDB Connector/C和软件包依赖项：sudo yum install MariaDB-shared MariaDB-devel
+2、安装MariaDB Connector/Python：pip install mariadb
+3、在wordpress新建一个名为日报的分类
+4、首次运行会生成配置文件Wordpressconfig.ini，填写好对应信息后再运行
+5、配置文件Wordpressconfig.ini中的用户需要有Mariadb的远程访问权限

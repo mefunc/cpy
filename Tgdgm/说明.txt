@@ -1,0 +1,5 @@
+1、在my.telegram.org申请api_id和api_hash
+2、找张png格式的图片改名为message.png放在当前目录下
+3、首次运行会生成配置文件Tgconfig.ini，填写好对应信息后再运行
+4、首次登录会发送一个登录码到Telegram并生成session.session文件，之后每次登录只要存在session.session文件就不需要登录码
+5、登录如果不成功需要挂代理

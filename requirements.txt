@@ -1,0 +1,13 @@
+chardet
+comtypes
+ephem
+Js2Py
+mariadb
+more-itertools
+PyQt5
+python-socks[asyncio]
+python-vlc
+pywifi
+requests
+telethon
+you-get
